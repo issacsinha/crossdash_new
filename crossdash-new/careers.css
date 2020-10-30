@@ -1,0 +1,152 @@
+.container {
+  background: url("/assets/png/careers-small.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  margin-bottom: 20vh;
+  width: 100%;
+  display: flex;
+}
+.background {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#background-text {
+  position: relative;
+  top: 15%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  margin-top: 10vh;
+  justify-content: space-around;
+}
+#background-text h1 {
+  color: white;
+  font-size: 4.4rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+#background-text h4 {
+  color: white;
+  letter-spacing: 0.06rem;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+#background-text img {
+  width: 20%;
+}
+.career-form-container {
+  text-align: center;
+  width: 60%;
+}
+#career-form {
+  background-color: white;
+  width: 75%;
+  padding: 6rem 0;
+  display: flex;
+  position: relative;
+  right: 18%;
+  border-radius: 0.6rem;
+  flex-direction: column;
+  margin: 15vh 0;
+  filter: drop-shadow(0.3rem 0.6rem 0.8rem rgba(37, 37, 37, 0.452));
+}
+#career-form input,
+#reason textarea {
+  background-color: #f2f2f2;
+}
+#job-type select {
+  background-color: #f2f2f2;
+  padding: 1.6rem 3rem;
+  border: none;
+  outline: none;
+  width: 80%;
+  border-radius: 0.6rem;
+}
+#file-upload {
+  width: 80%;
+  background-color: #529de8;
+  padding: 0.5rem 0 0 0;
+  outline: none;
+  margin: 3rem auto;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+#file-upload p {
+  color: white;
+  font-size: 1.4rem;
+  position: relative;
+  text-align: left;
+  margin: 1.6rem;
+}
+#file-upload input {
+  color: #529de8;
+  border: 0.1rem solid #529de8;
+  background-color: white;
+  width: 100%;
+  padding: 1.4rem 3rem;
+  transition-duration: 500ms;
+  outline: none;
+  cursor: pointer;
+}
+::-webkit-file-upload-button {
+  display: none;
+}
+#file-upload input:hover {
+  background-color: #28639e;
+  color: white;
+  border-color: #28639e;
+  filter: drop-shadow(0rem 0.2rem 0.2rem rgba(78, 78, 78, 0.507));
+}
+#submit input {
+  background-color: black;
+  margin-top: 4rem;
+  width: 30%;
+}
+#submit input:hover {
+  background-color: #28639e;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .background {
+    flex-direction: column;
+  }
+  #background-text {
+    top: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 14vh;
+  }
+  #background-text h1 {
+    font-size: 3.6rem;
+    letter-spacing: 0.1rem;
+  }
+  #background-text h4 {
+    font-size: 1.8rem;
+  }
+  #background-text img {
+    margin: 2rem 0;
+  }
+  .career-form-container {
+    width: 100%;
+    margin: 5rem auto;
+    text-align: center;
+  }
+  #career-form {
+    margin: 0;
+    right: 0;
+    width: 92%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  #job-type select {
+    width: 95%;
+  }
+  #file-upload {
+    width: 95%;
+  }
+  #submit input {
+    width: 60%;
+  }
+}
